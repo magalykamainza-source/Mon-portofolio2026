@@ -236,3 +236,261 @@ footer a:hover {
     transition: translateY(-3px);
 }
 
+.projets{
+    padding: 50px 20px;
+    align-items: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 30px;
+  
+}
+.card{
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: left;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgb(0, 0,0,0.08);
+}
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgb(0, 0,0,0.15);
+}
+.card img{
+    width: 100%;
+    height: 10.5rem;
+    object-fit: cover;
+    border-bottom: 4px solid var(--violet-doux);
+    border-radius: 0;   
+    padding: 0;
+
+}
+.card h3{
+    font-size: 18px;
+    margin: 15px;
+    color: var(--violet-doux);
+}
+.card p{
+    font-size: 14px;
+    margin: 0 15px 15px;
+    color: var(--gris-fonce);
+}
+.tags{
+    margin-top: 10px;
+    padding: 15px;
+}
+.tags span{
+    display: inline-block;
+    background: #EEE;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 5px 5px 10px 0;
+    font-size: 1rem;
+    color: var(--violet-fonce);
+}
+.link{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px 15px;
+    border-top: 2px solid #EEE;
+}
+.link a{
+    text-decoration: none;
+    color: var(--gris-trés-fonce);
+    font-weight: bold;
+    font-size: 14px;
+}
+.link a:hover{
+    text-decoration: underline;
+}
+h1 {
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 1.2rem auto ;
+    border-radius: 2px;
+}
+
+/* ===================== */
+/* PAGE CONTACT */
+/* ===================== */
+
+/* ===== CONTACT PRO ULTIME ===== */
+
+.contact-section {
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #f5f5ff, #ffffff);
+}
+
+.contact-section h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #6c63ff;
+    margin-bottom: 40px;
+}
+
+/* animation entrée */
+.contact-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* BOX */
+.contact-info,
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    width: 340px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* TITRE */
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* BOUTONS */
+.contact-info a {
+    display: block;
+    text-align: center;
+    padding: 14px;
+    margin: 12px 0;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* WhatsApp */
+.btn-whatsapp {
+    background: #25D366;
+}
+
+.btn-whatsapp:hover {
+    transform: translateY(-3px);
+    background: #1ebe5d;
+}
+
+/* Telegram */
+.btn-telegram {
+    background: #0088cc;
+}
+
+.btn-telegram:hover {
+    transform: translateY(-3px);
+    background: #0077b5;
+}
+
+/* Call */
+.btn-call {
+    background: #6c63ff;
+}
+
+.btn-call:hover {
+    transform: translateY(-3px);
+    background: #4f46e5;
+}
+
+/* FORM */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contact-form input:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 10px rgba(108,99,255,0.3);
+}
+
+/* bouton form */
+.contact-form button {
+    padding: 12px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #4f46e5;
+    transform: scale(1.05);
+}
+
+/* localisation */
+.location {
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--orange-vif);
+    transform: translateY(-3px);
+}
+
+
